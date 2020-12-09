@@ -1,2 +1,2 @@
 # Python-Projects
-Projects from The Tech Academy's Python Course
+Projects completed for The Tech Academy's Python Course.
