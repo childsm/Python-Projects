@@ -14,3 +14,4 @@ def home(request):
     # user in 'user' is the key and you get the value user above
     return render(request, "home.html", context) #context instead of {} to create dictionary
     #render in browser, pass in request obj, pass in file, {} returns some info back
+    #another option     return HttpResponse("<h1>Welcome user!</h1>")

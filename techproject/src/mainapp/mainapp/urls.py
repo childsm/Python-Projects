@@ -14,14 +14,17 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.conf.urls import include
 from django.contrib import admin
 from django.urls import path
-from .import views
+from . import views #the dot means the file is in the same directory so the directory name doesn't need to be named
 #line 18 says in the this directory (. means this dir) use the file views
 
 urlpatterns = [
     path('', views.home, name="home"),
     path('admin/', admin.site.urls),
+    path('', include('products.urls')),
 ]
 
+#Adding it back into itsself
 urlpatterns += staticfiles_urlpatterns()

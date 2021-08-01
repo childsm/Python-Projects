@@ -1,4 +1,5 @@
 #Basic model/schema for our product
+#models.py is our database and Objects is the model manager
 
 from django.db import models
 
@@ -6,7 +7,7 @@ TYPE_CHOICES = (
     ('appetizers','appetizers'), #tuples
     ('entrees','entrees'),
     ('treats','treats'),
-    ('drinks','treats'),
+    ('drinks','drinks'),
 )
 
 class Product(models.Model):
